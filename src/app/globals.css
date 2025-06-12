@@ -2,5 +2,11 @@
 
 @layer base {
     @font-face {
+        font-family: 'alpino';
+        src: url('/fonts/Alpino-Variable.woff2') format('woff2');
     }
+}
+
+@theme {
+    --font-alpino: 'alpino', sans-serif;
 }
