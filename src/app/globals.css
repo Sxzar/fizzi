@@ -9,6 +9,7 @@
 
 @theme {
     --font-alpino: 'alpino', sans-serif;
+    --color-yellow-300: '#FDE047';
 }
 
 .animate-slide-left {
