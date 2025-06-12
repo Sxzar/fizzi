@@ -58,8 +58,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
                 trigger: '.hero',
                 start: 'top top',
                 end: 'bottom bottom',
-                scrub: 1.5,
-                markers: true
+                scrub: 1.5
             }
         });
 

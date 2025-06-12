@@ -2,6 +2,7 @@ import './globals.css';
 
 import Header from '@/components/Header';
 import { PrismicPreview } from '@prismicio/next';
+import ViewCanvas from '@/components/ViewCanvas';
 import { repositoryName } from '@/prismicio';
 
 export default function RootLayout({
@@ -14,6 +15,7 @@ export default function RootLayout({
             <body className="overflow-x-hidden bg-yellow-300">
                 <Header />
                 <main>{children}</main>
+                <ViewCanvas />
             </body>
             <PrismicPreview repositoryName={repositoryName} />
         </html>
