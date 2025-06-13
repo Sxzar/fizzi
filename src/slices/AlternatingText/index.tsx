@@ -42,14 +42,12 @@ const AlternatingText: FC<AlternatingTextProps> = ({ slice }) => {
                             className="alternating-section grid h-screen place-items-center gap-x-12 md:grid-cols-2"
                         >
                             <div
-                                className={
-                                    (clsx(
-                                        index % 2 === 0
-                                            ? 'col-start-1'
-                                            : 'md:col-start-2'
-                                    ),
-                                    'rounded-lg p-8 backdrop-blur-sm max-md:bg-white/20')
-                                }
+                                className={clsx(
+                                    index % 2 === 0
+                                        ? 'col-start-1'
+                                        : 'md:col-start-2',
+                                    'rounded-lg p-8 backdrop-blur-sm max-md:bg-white/20'
+                                )}
                             >
                                 <h2 className="text-6xl font-bold text-balance">
                                     <PrismicText field={item.heading} />
