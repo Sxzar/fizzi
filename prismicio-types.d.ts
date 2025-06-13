@@ -196,6 +196,36 @@ type HeroSliceVariation = HeroSliceDefault;
  */
 export type HeroSlice = prismic.SharedSlice<'hero', HeroSliceVariation>;
 
+/**
+ * Default variation for SkyDive Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SkyDiveSliceDefault = prismic.SharedSliceVariation<
+    'default',
+    Record<string, never>,
+    never
+>;
+
+/**
+ * Slice variation for *SkyDive*
+ */
+type SkyDiveSliceVariation = SkyDiveSliceDefault;
+
+/**
+ * SkyDive Shared Slice
+ *
+ * - **API ID**: `sky_dive`
+ * - **Description**: SkyDive
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SkyDiveSlice = prismic.SharedSlice<
+    'sky_dive',
+    SkyDiveSliceVariation
+>;
+
 declare module '@prismicio/client' {
     interface CreateClient {
         (
@@ -224,7 +254,10 @@ declare module '@prismicio/client' {
             HeroSlice,
             HeroSliceDefaultPrimary,
             HeroSliceVariation,
-            HeroSliceDefault
+            HeroSliceDefault,
+            SkyDiveSlice,
+            SkyDiveSliceVariation,
+            SkyDiveSliceDefault
         };
     }
 }
