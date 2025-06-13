@@ -1,10 +1,11 @@
+import React from 'react';
 import clsx from 'clsx';
 
 type BoundedProps = {
     as?: React.ElementType;
     className?: string;
     children: React.ReactNode;
-    [key: string]: any;
+    [key: string]: unknown;
 };
 
 export const Bounded = ({
@@ -13,14 +14,14 @@ export const Bounded = ({
     children,
     ...restProps
 }: BoundedProps) => {
-    return (
-        <Comp
-            className={clsx('px-4 first:pt-10 md:px-6', className)}
-            {...restProps}
-        >
-            <div className="mx-auto flex w-full max-w-7xl flex-col items-center">
-                {children}
-            </div>
-        </Comp>
+    return React.createElement(
+        Comp,
+        {
+            className: clsx('px-4 first:pt-10 md:px-6', className),
+            ...restProps
+        },
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center">
+            {children}
+        </div>
     );
 };
