@@ -16,7 +16,7 @@
     animation: slide-left 3s linear infinite;
 }
 
-.spin-slow {
+.animate-spin-slow {
     animation: spin 6s linear infinite;
 }
 
