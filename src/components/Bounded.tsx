@@ -4,6 +4,7 @@ type BoundedProps = {
     as?: React.ElementType;
     className?: string;
     children: React.ReactNode;
+    [key: string]: any;
 };
 
 export const Bounded = ({
