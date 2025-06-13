@@ -1,7 +1,7 @@
 import { FizziLogo } from '@/components/FizziLogo';
 import React from 'react';
 
-type Props = {};
+type Props = object;
 
 export default function Header({}: Props) {
     return (

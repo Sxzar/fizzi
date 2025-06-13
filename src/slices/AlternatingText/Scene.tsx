@@ -10,8 +10,7 @@ import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
-type Props = {};
-
+type Props = object;
 export default function Scene({}: Props) {
     const canRef = useRef<Group>(null);
     const bgColors = ['#ffa6b5', '#e9cff6', '#cbef9a'];

@@ -11,7 +11,7 @@ import { useStore } from '@/hooks/useStore';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-type Props = {};
+type Props = object;
 
 export default function Scene({}: Props) {
     const isReady = useStore((state) => state.isReady);

@@ -2,7 +2,7 @@ import CircleText from '@/components/CircleText';
 import { FizziLogo } from '@/components/FizziLogo';
 import React from 'react';
 
-type Props = {};
+type Props = object;
 
 export default function Footer({}: Props) {
     return (
